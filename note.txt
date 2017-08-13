@@ -1,0 +1,5 @@
+Spring实战第四章AOP
+    Spring中配置AspectJ，需要显示开启，使用JavaConfiguration的@EnableAspectJAutoProxy(proxyTargetClass = true)
+    其中参数表示启用CGLib代理，因为Java的代理只能基于接口，CGLib可以基于类和接口
+
+    @Around注解问题，注解后@Autowired注入不进去，显示为null
